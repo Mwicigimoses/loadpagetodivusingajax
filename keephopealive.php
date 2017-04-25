@@ -1,4 +1,4 @@
-        <div class="right_col" role="main">
+        <div class="" role="main">
           <div class="">
             <div class="page-title">
               <div class="title_left">
@@ -36,7 +36,7 @@
                   <div class="x_content">
 
                     <!-- start form for validation -->
-                    <form method="post" action="<?php echo base_url();?>Home/save_keephopealive" id="demo-form" data-parsley-validate >
+                    <form method="post" action="Home/save_keephopealive" id="demo-form" data-parsley-validate >
                       <?php if (isset($success)): ?>
                         <div class="alert alert-success">
                           <?php echo $success; ?>

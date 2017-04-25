@@ -1,6 +1,6 @@
 
 <!-- page content -->
-        <div class="right_col" role="main">
+        <div class="" role="main">
           <!-- top tiles -->
           
           <div class="row tile_count" style="text-align: center;">

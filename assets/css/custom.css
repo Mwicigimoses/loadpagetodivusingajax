@@ -488,8 +488,8 @@ body .container.body .right_col {
     background: #D9DEE4
 }
 body {
-       color: rgb(70, 156, 20);
-        background: #0b1902;
+    color: rgb(70, 156, 20);
+    background: rgba(11, 25, 2, 0);
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;

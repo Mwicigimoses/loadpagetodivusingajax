@@ -91,19 +91,6 @@
                     </div>
                   </div>
             </div>
-
-
-
-
-
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            The Good News Fellowship International <a href="https://colorlib.com">Admin Area</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
       
 
     <!-- jQuery -->
@@ -172,11 +159,3 @@
     
   </body>
 </html>
-
-
-
-
-
-
-
-
