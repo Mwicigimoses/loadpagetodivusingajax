@@ -40,27 +40,28 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="http://www.tgnfi.co.ke" class="site_title"><i class="fa fa-paw"></i> <span>Backend<br/></span></a>
+              <a href="http://www.tgnfi.co.ke" class="site_title"> <span>Tgnfi Backend<br/></span></a>
                 </div>
                 <div class="clearfix"></div>
 
             <!-- menu profile quick info -->
                       <div class="profile clearfix">
                         <div class="profile_pic">
-                          <img src="assets/images/pastorsdesk/mwicigi.jpg" alt="..." class="img-circle profile_img">
+                          <img src="assets/images/mwicigi1.jpg" alt="..." class="img-circle profile_img">
                             </div>
                             <div class="profile_info">
                             <span>Welcome,</span>
                           <h2>Pastor Moses</h2>
                         </div>
                       </div>
+                      <div style="padding-bottom: 20px"></div>
 
 
              <!-- sidebar menu -->
                     
                   <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
-                      <h3>General</h3>
+                      <h3 style="padding-bottom: 20px;padding-left: 30px">General</h3>
                         <nav id="nav">
                           <ul class="nav side-menu">
                             <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>

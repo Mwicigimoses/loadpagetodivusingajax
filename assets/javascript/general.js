@@ -13,10 +13,12 @@
 
 			//set $this for reuse
 		  	var $this = $(this),
-		  	target = $this.data('target'); 
+		  	target = $this.data('Application/controllers/Home/'+'target');
+		  	
 
 		  	//load target page into container
-		  	container.load(target +'.php');
+		  	container.load(target);
+		  	
 
 
 		  	//stop normal link behaviour
