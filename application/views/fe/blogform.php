@@ -1,4 +1,4 @@
-        <div class="" role="main">
+        <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
               <div class="title_left">
@@ -67,43 +67,33 @@
                     </div>
                   </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Text areas<small>Sessions</small></h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Settings 1</a>
-                        </li>
-                        <li><a href="#">Settings 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-                <br/>
-                <textarea name="article_content"></textarea>
-                  <br />
-
-                  <div class="ln_solid"></div>
-                     
-                          <div style="text-align: center;">
-
-                          <button class="btn btn-primary" type="button">Cancel</button>
-
-              <button class="btn btn-primary" type="reset">Reset</button>
-
-                          <button type="submit" class="btn btn-success">Submit</button>
-                          </div>
-                          <div class="ln_solid"></div>
-                   
-                </div>
+              <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=8wrmo9p29ylsrzjhd9sbrji0yu4g9ruj70e9c3xd6q9ntaxs"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
+            
+            <textarea style="height: 300px"></textarea>
+            </div>  
+            <br />
+            
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Form Input Grid <small>form input </small></h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Settings 1</a>
+                      </li>
+                      <li><a href="#">Settings 2</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
               </div>
             </div>
 

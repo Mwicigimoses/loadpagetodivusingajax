@@ -14,25 +14,31 @@ class Home extends CI_Controller {
 		$data['blog']=$this->goodnews->blog_count();
 		$this->load->view('fe/includes/template',$data);
 	}
-	public function blogform(){
-		$data['main_content'] = 'fe/blogform';
+
+	public function homepage(){
+		//$data['main_content'] = 'fe/home';
 		$data['sermon']=$this->goodnews->sermon_count();
 		$data['keephopealive']=$this->goodnews->keephopealive_count();
 		$data['keephopealive_count']=$this->goodnews->keephopealive_count	();
 		$data['blog']=$this->goodnews->blog_count();
+		$this->load->view('fe/home',$data);
+	}
+	public function blogform(){
+		//$data['main_content'] = 'fe/blogform';
+		
 		$data['blog']=$this->goodnews->blog();
-		$this->load->view('fe/includes/template',$data);
+		$this->load->view('fe/blogform',$data);
 }
 public function keephopealive(){
-		$data['main_content'] = 'fe/keephopealive';
+		//$data['main_content'] = 'fe/keephopealive';
 		$data['keephopealive']=$this->goodnews->keephopealive();
-		$this->load->view('fe/includes/template',$data);
+		$this->load->view('fe/keephopealive',$data);
 
 }
 public function sermon(){
-		$data['main_content'] = 'fe/sermon';
+		//$data['main_content'] = 'fe/sermon';
 		$data['sermon']=$this->goodnews->sermon();
-		$this->load->view('fe/includes/template',$data);
+		$this->load->view('fe/sermon',$data);
 	}
 
 	function  save(){
