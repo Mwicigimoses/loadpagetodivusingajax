@@ -11,7 +11,7 @@ class Goodnews extends CI_Model{
 
 
 				public function blog(){
-                $this->db->order_by("no","ascd");
+                $this->db->order_by("no","desc");
                 $query = $this->db->get('blog', 10);
                 return $query->result();
            								
@@ -44,68 +44,65 @@ class Goodnews extends CI_Model{
                 return $query->result();
             }
 
-            //Inserting data into the database.
-            public function insert_blog($data){
-                $insert = $this->db->insert('blog', $data);
-                if($insert){
-                    $arr_return = array(
-                        'res'=>true,
-                        'dt'=>'Blog article added succesifully.' 
+         
 
-                        );
+    public function add_blog($add_blog)
+            { 
+                $insert = $this->db->insert('blog', $add_blog); 
+        
+            if ($insert){
+                $arr_return = array(
+                'res' => true,
+                'dt' => 'Listing Type added successfully.');
                 }
-                else{
-                    $arr_return=array(
-                         'res'=>false,
-                         'dt'=>'The blog article was not added succesifuly. Please try again.'   
 
-
-                    );
+            else {
+                $arr_return = array(
+                'res' => false,
+                'dt' => 'Could not add listing type successfully. Please try again.'
+                );
                 }
-                return $arr_return;
-            }
-
-
-             public function insert_sermon($data){
-                $insert = $this->db->insert('sermon', $data);
-                if($insert){
-                    $arr_return = array(
-                        'res'=>true,
-                        'dt'=>'Sermon article added succesifully.' 
-
-                        );
+            return $arr_return;
                 }
-                else{
-                    $arr_return=array(
-                         'res'=>false,
-                         'dt'=>'The Sermon article was not added succesifuly. Please try again.'   
+              
 
 
-                    );
+    public function add_sermon($add_sermon)
+            { 
+                $insert = $this->db->insert('sermon', $add_sermon); 
+        
+            if ($insert){
+                $arr_return = array(
+                'res' => true,
+                'dt' => 'Listing Type added successfully.');
                 }
-                return $arr_return;
-            }
 
-
-             public function insert_keephopealive($data){
-                $insert = $this->db->insert('keephopealive', $data);
-                if($insert){
-                    $arr_return = array(
-                        'res'=>true,
-                        'dt'=>'Keep Hope Alive article added succesifully.' 
-
-                        );
+            else {
+                $arr_return = array(
+                'res' => false,
+                'dt' => 'Could not add listing type successfully. Please try again.'
+                );
                 }
-                else{
-                    $arr_return=array(
-                         'res'=>false,
-                         'dt'=>'The Keep Hope Alive article was not added succesifuly. Please try again.'   
-
-
-                    );
+            return $arr_return;
                 }
-                return $arr_return;
-            }
 
+                
+    public function add_keephopealive($add_keephopealive)
+            { 
+                $insert = $this->db->insert('keephopealive', $add_keephopealive); 
+        
+            if ($insert){
+                $arr_return = array(
+                'res' => true,
+                'dt' => 'Listing Type added successfully.');
+                }
 
-}
+            else {
+                $arr_return = array(
+                'res' => false,
+                'dt' => 'Could not add listing type successfully. Please try again.'
+                );
+                }
+            return $arr_return;
+                }
+              }

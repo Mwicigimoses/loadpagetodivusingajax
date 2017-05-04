@@ -31,44 +31,240 @@
           </div>
 
           
-          <!--/try to change-->
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="dashboard_graph">
+          <!-- page content -->
+        <div class="left_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_center" style="padding: 5px">
+                <h3> Home <small> Isaiah 52:7</small> </h3>
+              </div>
 
-                <div class="row x_title">
-                  <div class="col-md-6">
-                    <h3>The Good News Fellowship International </h3>
+              
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <!-- <h2>Media Gallery <small> gallery design </small></h2> -->
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
                   </div>
-                  <div class="col-md-6">
-                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                      <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                  <div class="x_content">
+
+                    <div class="row">
+
+                      <p>Special Moments...</p>
+
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/angell.jpg" alt="image" />
+                            <div class="mask">
+                              <p>Be a walking church</p>
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                            <p>Michael Angell teaching</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/1.jpg" alt="image" />
+                            <div class="mask">
+                              <p>Psalms 150:1</p>
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                            <p>Pastor Moses presenting a number</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/youth3.jpg" alt="image" />
+                            <div class="mask">
+                              <p>Home Fellowship</p>
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                            <p>Sharing food after Fellowship</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/3.jpg" alt="image" />
+                            <div class="mask">
+                              <p>Write your Vision </p>
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                            <p>Launching the Good news Fellowship Int</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/4.jpg" alt="image" />
+                            <div class="mask">
+                              <p>Overflowing Love</p>
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                            <p>Brother Ephantus during the Launch</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/5.jpg" alt="image" />
+                            <div class="mask no-caption">
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                            
+                            <p>Demonstrating love on Launch date</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/6.jpg" alt="image" />
+                            <div class="mask no-caption">
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                            
+                            <p>Moses Snr and Moses Jnr during launch date</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/7.jpg" alt="image" />
+                            <div class="mask no-caption">
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                            
+                            <p>Baby Jayden at the Launch Date</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/youth1.jpg" alt="image" />
+                            <div class="mask no-caption">
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                              
+                            <p>Praising God on a Sunday Fellowship</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-55">
+                        <div class="thumbnail">
+                          <div class="image view view-first">
+                            <img style="width: 100%; display: block;" src="assets/images/risper1.jpg" alt="image" />
+                            <div class="mask no-caption">
+                              <div class="tools tools-bottom">
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <a href="#"><i class="fa fa-pencil"></i></a>
+                                <a href="#"><i class="fa fa-times"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="caption">
+                           
+                            <p>Risper during the launch date.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-9 col-sm-9 col-xs-12">
-                 <img src="<?php echo base_url();?>assets/images/church1.jpg">
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
-                  
-
-                  
-                  
-
-                </div>
-
-                <div class="clearfix"></div>
               </div>
             </div>
-
           </div>
-          <br />
+        </div>
+          <!--/try to change-->
+          
 
           <div class="row">
-
-
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="x_panel tile fixed_height_320">
                 <div class="x_title">

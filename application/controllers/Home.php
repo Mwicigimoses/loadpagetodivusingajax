@@ -23,135 +23,89 @@ class Home extends CI_Controller {
 		$data['blog']=$this->goodnews->blog_count();
 		$this->load->view('fe/home',$data);
 	}
-	public function blogform(){
+		public function blogform(){
 		//$data['main_content'] = 'fe/blogform';
-		
 		$data['blog']=$this->goodnews->blog();
 		$this->load->view('fe/blogform',$data);
-}
-public function keephopealive(){
+	}
+		public function keephopealive(){
 		//$data['main_content'] = 'fe/keephopealive';
 		$data['keephopealive']=$this->goodnews->keephopealive();
 		$this->load->view('fe/keephopealive',$data);
 
-}
-public function sermon(){
+	}
+		public function sermon(){
 		//$data['main_content'] = 'fe/sermon';
 		$data['sermon']=$this->goodnews->sermon();
 		$this->load->view('fe/sermon',$data);
 	}
 
-	function  save(){
-
-		$data=array(
-
-			'article_title'=>$this->input->post('article_title'),
-			'article_author'=>$this->input->post('article_author'),
-			'article_date'=>$this->input->post('article_date'),
-			'article_image'=>$this->input->post('article_image'),
-			'article_content'=>$this->input->post('article_content')
-			
-			);
-			//explain to me.
-		$q=$this->goodnews->insert_blog($data);
-				if($q['res']==true){
-					$resp = array('status'=>'SUCCESS','message'=> $q['dt']);		
-					//redirect('home/blogform');
-					$data['success'] = $q['dt'];
-					$data['main_content'] = 'fe/blogform';
-					$data['sermon']=$this->goodnews->sermon_count();
-					$data['keephopealive']=$this->goodnews->keephopealive_count();
-					$data['keephopealive_count']=$this->goodnews->keephopealive_count	();
-					$data['blog']=$this->goodnews->blog_count();
-					$data['blog']=$this->goodnews->blog();
-					$this->load->view('fe/includes/template',$data);
-
-				} 
-				else{
-					$resp = array('status'=>'ERR','message'=> $q['dt']);
-					$data['error'] = $q['dt'];
-					$data['main_content'] = 'fe/blogform';
-					$data['sermon']=$this->goodnews->sermon_count();
-					$data['keephopealive']=$this->goodnews->keephopealive_count();
-					$data['keephopealive_count']=$this->goodnews->keephopealive_count	();
-					$data['blog']=$this->goodnews->blog_count();
-					$data['blog']=$this->goodnews->blog();
-					$this->load->view('fe/includes/template',$data);
-
-				}
+		public function insert_blog()
+	{ 
+				   	
+		$add_blog = array(
+        'blog_title'=>$this->input->post('blog_title'),
+        'blog_author'=>$this->input->post('blog_author'),
+        'blog_date'=>$this->input->post('blog_date'),
+        'blog_image'=>$this->input->post('blog_image'),
+        'blog_content'=>$this->input->post('blog_content'),               
+         
+         );
+         $q = $this->goodnews->add_blog($add_blog);         	
+          
+		if ($q['res'] == true){
+			$resp = array('status' => 'SUCCESS','message' => $q['dt']);
+		}else{
+			$resp = array('status' => 'ERR','message' => $q['dt']);
+		}
+		echo json_encode($resp);
 	}
 
-	function  save_sermon(){
-
-		$data=array(
-
-			'sermon_title'=>$this->input->post('sermon_title'),
-			'sermon_author'=>$this->input->post('sermon_author'),
-			'sermon_date'=>$this->input->post('sermon_date'),
-			'sermon_image'=>$this->input->post('sermon_image'),
-			'sermon_content'=>$this->input->post('sermon_content')
-			
-			);
-			//explain to me.
-		$q=$this->goodnews->insert_sermon($data);
-				if($q['res']==true){
-					$resp = array('status'=>'SUCCESS','message'=> $q['dt']);		
-					//redirect('home/blogform');
-					$data['success'] = $q['dt'];
-					$data['main_content'] = 'fe/sermon';
-					$data['sermon']=$this->goodnews->sermon_count();
-					$data['keephopealive']=$this->goodnews->keephopealive_count();
-					$data['keephopealive_count']=$this->goodnews->keephopealive_count	();
-					$data['blog']=$this->goodnews->blog_count();
-					$data['blog']=$this->goodnews->blog();
-					$this->load->view('fe/includes/template',$data);
-
-				} 
-				else{
-					$resp = array('status'=>'ERR','message'=> $q['dt']);
-					$data['error'] = $q['dt'];
-					$data['main_content'] = 'fe/sermon';
-					$data['sermon']=$this->goodnews->sermon_count();
-					$data['keephopealive']=$this->goodnews->keephopealive_count();
-					$data['keephopealive_count']=$this->goodnews->keephopealive_count	();
-					$data['blog']=$this->goodnews->blog_count();
-					$data['blog']=$this->goodnews->blog();
-					$this->load->view('fe/includes/template',$data);
-
-				}
+	public function insert_sermon()
+	{ 
+				   	
+		$add_sermon = array(
+        'sermon_title'=>$this->input->post('sermon_title'),
+        'sermon_author'=>$this->input->post('sermon_author'),
+        'sermon_date'=>$this->input->post('sermon_date'),
+        'sermon_image'=>$this->input->post('sermon_image'),
+        'sermon_content'=>$this->input->post('sermon_content'),               
+         
+         );
+         $q = $this->goodnews->add_sermon($add_sermon);         	
+          
+		if ($q['res'] == true){
+			$resp = array('status' => 'SUCCESS','message' => $q['dt']);
+		}else{
+			$resp = array('status' => 'ERR','message' => $q['dt']);
+		}
+		echo json_encode($resp);
 	}
 
-		function  save_keephopealive(){
+	
 
-		$data=array(
-
-			'title'=>$this->input->post('title'),
-			'author'=>$this->input->post('author'),
-			'date'=>$this->input->post('date'),
-			'image_location'=>$this->input->post('image_location'),
-			'content'=>$this->input->post('content')
-			
-			);
-		
-		$q=$this->goodnews->insert_keephopealive($data);
-				if($q['res']==true){
-					$resp = array('status'=>'SUCCESS','message'=> $q['dt']);		
-					//redirect('home/blogform');
-					$data['success'] = $q['dt'];
-					$data['main_content'] = 'fe/keephopealive';
-					$data['keephopealive']=$this->goodnews->keephopealive();
-					$this->load->view('fe/includes/template',$data);
-
-				} 
-				else{
-					$resp = array('status'=>'ERR','message'=> $q['dt']);
-					$data['error'] = $q['dt'];
-					$data['main_content'] = 'fe/keephopealive';
-					$data['keephopealive']=$this->goodnews->keephopealive();
-					$this->load->view('fe/includes/template',$data);
-
-				}
+	public function insert_keephopealive()
+	{ 
+				   	
+		$add_keephopealive = array(
+        'keephopealive_title'=>$this->input->post('keephopealive_title'),
+        'keephopealive_author'=>$this->input->post('keephopealive_author'),
+        'keephopealive_date'=>$this->input->post('keephopealive_date'),
+        'keephopealive_image'=>$this->input->post('keephopealive_image'),
+        'keephopealive_content'=>$this->input->post('keephopealive_content'),               
+         
+         );
+         $q = $this->goodnews->add_keephopealive($add_keephopealive);         	
+          
+		if ($q['res'] == true){
+			$resp = array('status' => 'SUCCESS','message' => $q['dt']);
+		}else{
+			$resp = array('status' => 'ERR','message' => $q['dt']);
+		}
+		echo json_encode($resp);
 	}
-
-
 }
+
+
+     
+			
